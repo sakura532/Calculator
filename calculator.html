@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <style >
+    body{
+        background-image: url(road.jpg);
+        background-size: cover;
+    }
+      #h{
+        color:#000;
+        border-radius:none;
+        font-size:25px;
+        border: none;
+        background-color: gray;
+      }
+      div{
+        padding-left: 400px;
+        padding-top: 100px;
+        margin: 4px 2px ;
+
+
+
+      }
+      #g {
+        width: 100%;
+        height: 35px;
+        color:red;
+        font-size: 20px;
+
+      }
+      form {
+        font-size: 25px;
+
+      }
+      h1{
+        font-size: 35px;
+      }
+      
+    </style>
+    <script type="text/javascript">
+       function multiply(){
+         var a=Number(document.arith.frist.value);
+         var b=Number(document.arith.second.value);
+         var c=a*b;
+         document.arith.total.value=c;
+       }
+       function division(){
+         var a=Number(document.arith.frist.value);
+         var b=Number(document.arith.second.value);
+         var c=a/b;
+         document.arith.total.value=c;
+       }
+       function subtraction(){
+         var a=Number(document.arith.frist.value);
+         var b=Number(document.arith.second.value);
+         var c=a-b;
+         document.arith.total.value=c;
+       }
+       function addition(){
+         var a=Number(document.arith.frist.value);
+         var b=Number(document.arith.second.value);
+         var c=a+b;
+         document.arith.total.value=c;
+       }
+       function modulus(){
+         var a=Number(document.arith.frist.value);
+         var b=Number(document.arith.second.value);
+         var c=a%b;
+         document.arith.total.value=c;
+       }
+</script>
+  </head>
+  <body ><center><h1>Arithmetic operations</h1></center><div >
+
+
+
+    <form name="arith" ><table  height="350px" cellspacing="5" cellpadding="10"  >
+      <tr><td>Number 1 :- <input id="g" type="text" name="frist" value=""></td>
+ <td>   Number 2 :- <input id="g" type="text" name="second" value=""></td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="gray">  <input id="h" type="button"  value="addition" onclick="javascript:addition();"></td>
+<td align="center" bgcolor="gray">  <input id="h" type="button"  value="subtraction" onclick="javascript:subtraction();"></td>
+
+</tr>
+  <tr>
+    <td align="center" bgcolor="gray"><input id="h" type="button"  value="multiply" onclick="javascript:multiply();">
+
+<td align="center" bgcolor="gray">  <input id="h" type="button"  value="division" onclick="javascript:division();"><td>
+</tr>
+<tr>
+<td colspan="2" align="center" bgcolor="gray">
+<input id="h" type="button"  value="modulus" onclick="javascript:modulus();">
+<tr>
+  <td colspan="2"> &nbsp</td>
+</tr>
+<tr > <td colspan="2"> Result:- <input id="g" type="text" name="total" value="" textarea="100%"</td></tr>
+  <tr><td colspan="2" align="center" bgcolor="gray"><input id="h" type="reset" name="reset" value="Clear"></td></tr>
+
+</table>    </form>
+
+
+</div>
+
+
+  </body>
+</html>
